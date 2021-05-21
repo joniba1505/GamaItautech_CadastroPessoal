@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pessoal</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Cadastro</h1>
+
+    <p>Preencha o formulário abaixo! Os campos com * (asterisco) são obrigatórios!</p>
+
+<form action="" method="post">
+
+    <h2>Dados Pessoais</h2>
+
+
+    <div>
+    <label for="nome">* Nome Completo:</label>    
+</div>
+<div>
+    <input type="text" name="nome" id="nome" required>
+</div>
+
+<div>
+    <label for="cpf">* CPF:</label>    
+</div>
+<div>
+    <input type="text" name="cpf" id="cpf" required>
+</div>
+
+<div>
+    <label for="rg">RG:</label>    
+</div>
+<div>
+    <input type="text" name="rg" id="rg">
+</div>
+
+    
+<div>
+        <label for="sexo">Sexo:</label>
+    <select id="sexo">
+        <option value="M">Masculino</option>
+    <option value="F">Feminino</option>
+        </select>    
+</div>
+
+<h3>Endereço</h3>
+
+<div>
+    <label for="cep">CEP</label>
+</div>
+<div>
+    <input type="text" name="cep" id="cep">
+</div> <br>
+
+<div>
+    <label for="endereco">* Rua:</label>
+<input type="text" name="endereco" id="endereco" required>
+</div>
+
+<div>
+    <label for="numero">* Número:</label>
+</div>
+<div>
+    <input type="text" name="numero" id="numero" required>
+</div> <br>
+    
+<div>
+    <label for="bairro">Bairro:</label>
+</div>
+<div>
+    <input type="text" name="bairro" id="bairro">
+</div> <br>
+
+<div>
+    <label for="cidade">Cidade:</label>
+</div>
+<div>
+    <input type="text" name="cidade" id="cidade">
+</div> <br>
+
+<div>
+    <label for="uf">Estado</label>
+		<select id="uf">
+			<option value="AC">Acre</option>
+			<option value="AL">Alagoas</option>
+			<option value="AP">Amapá</option>
+			<option value="AM">Amazonas</option>
+			<option value="BA">Bahia</option>
+			<option value="CE">Ceará</option>
+			<option value="DF">Distrito Federal</option>
+			<option value="ES">Espírito Santo</option>
+			<option value="GO">Goiás</option>
+			<option value="MA">Maranhão</option>
+			<option value="MT">Mato Grosso</option>
+			<option value="MS">Mato Grosso do Sul</option>
+			<option value="MG">Minas Gerais</option>
+			<option value="PA">Pará</option>
+			<option value="PB">Paraíba</option>
+			<option value="PR">Paraná</option>
+			<option value="PE">Pernambuco</option>
+			<option value="PI">Piauí</option>
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="RN">Rio Grande do Norte</option>
+			<option value="RS">Rio Grande do Sul</option>
+			<option value="RO">Rondônia</option>
+			<option value="RR">Roraima</option>
+			<option value="SC">Santa Catarina</option>
+			<option value="SP">São Paulo</option>
+			<option value="SE">Sergipe</option>
+			<option value="TO">Tocantins</option>
+		</select>
+</div>
+
+<h3>Contato</h3>
+
+<div>
+    <label for="tel-fixo">Telefone Fixo:</label>
+</div>
+<div>
+    <input type="tel" name="tel-fixo" id="tel-fixo">
+</div> <br>
+
+<div>
+    <label for="tel-cel">* Telefone Celular:</label>
+</div>
+<div>
+    <input type="tel" name="tel-cel" id="tel-cel" required>
+</div>
+
+<div class="botoes">
+    <button id="cadastrar">Cadastrar-se</button>
+</div>
+
+<div class="botoes">
+    <button id="cadastroNovo" disabled>Novo Cadastro</button>
+</div>
+
+
+</form>
+
+<div class="resultado">
+
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
